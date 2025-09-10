@@ -1,0 +1,13 @@
+{
+  "extends": "@repo/typescript-config/base.json",
+  "compilerOptions": {
+    "allowArbitraryExtensions": true,
+    "incremental": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "paths": {
+      "@man/fe-web/*": ["./*"]
+    }
+  },
+  "include": ["."],
+  "exclude": ["node_modules"]
+}

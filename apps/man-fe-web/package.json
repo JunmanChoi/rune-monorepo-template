@@ -1,0 +1,42 @@
+{
+  "name": "@man/fe-web",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "sass:type": "pnpm typed-scss-modules src",
+    "sass:type:dev": "pnpm typed-scss-modules src --watch",
+    "compile:check": "tsc --project tsconfig.json --noEmit",
+    "compile:dev": "tsc --project tsconfig.json --noEmit --watch",
+    "build": "NODE_ENV=production pnpm rune build",
+    "start:local": "NODE_ENV=development RUNTIME_ENV=local pnpm rune dev",
+    "start:stag": "NODE_ENV=production RUNTIME_ENV=stag pnpm rune start",
+    "start:prod": "NODE_ENV=production RUNTIME_ENV=prod pnpm rune start"
+  },
+  "dependencies": {
+    "@fxts/core": "^1.15.0",
+    "@man/fe-kit": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@rune-ts/server": "^1.0.24",
+    "cacheable-lookup": "^6.1.0",
+    "compression": "^1.8.0",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "http-proxy-middleware": "^3.0.5",
+    "rune-ts": "^0.9.4",
+    "ua-parser-js": "^2.0.3"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/compression": "^1.7.5",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/express": "^5.0.0",
+    "@types/express-http-proxy": "^1.6.6",
+    "sass": "^1.89.1",
+    "typed-scss-modules": "^8.1.1",
+    "typescript": "^5.7.3"
+  }
+}

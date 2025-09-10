@@ -1,0 +1,23 @@
+{
+  "extends": "@repo/typescript-config/base.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "incremental": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "paths": {
+      "@man/fe-kit/*": ["./*"]
+    },
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths"
+      },
+      {
+        "transform": "typescript-transform-paths",
+        "afterDeclarations": true
+      }
+    ]
+  },
+  "include": ["."],
+  "exclude": ["node_modules"]
+}

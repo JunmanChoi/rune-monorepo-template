@@ -1,0 +1,51 @@
+{
+  "name": "@man/fe-kit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.js",
+      "require": "./dist/main.js"
+    },
+    "./rune/*": {
+      "types": "./dist/rune/*.d.ts",
+      "import": "./dist/rune/*.js",
+      "require": "./dist/rune/*.js"
+    },
+    "./server/*": {
+      "types": "./dist/server/*.d.ts",
+      "import": "./dist/server/*.js",
+      "require": "./dist/server/*.js"
+    },
+    "./plugins/*": {
+      "types": "./dist/plugins/*.d.ts",
+      "import": "./dist/plugins/*.js",
+      "require": "./dist/plugins/*.js"
+    }
+  },
+  "scripts": {
+    "prepare": "ts-patch install -s",
+    "dev": "tsc -p tsconfig.build.json -w",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fxts/core": "^1.15.0",
+    "@rune-ts/server": "^1.0.24",
+    "rune-ts": "^0.9.4"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/express": "^5.0.0",
+    "ts-patch": "^3.3.0",
+    "typescript": "^5.7.3",
+    "typescript-transform-paths": "^3.5.5",
+    "webpack": "^5.99.9"
+  }
+}

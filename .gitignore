@@ -12,3 +12,6 @@ public/dist
 
 *storybook.log
 storybook-static
+
+*.d.scss.ts
+.rune
