@@ -1,27 +1,12 @@
-import "./style.scss";
-import { Counter } from "@repo/ui/counter";
+import { app } from "@rune-ts/server";
+import { render_router } from "./renderApp/app/server";
 
-const counter = new Counter({
-  initialValue: 10,
-  step: 5,
-  onChange: (value) => console.log("Counter value:", value),
-});
+export function bootstrap() {
+  const application = app();
 
-const logo = document.createElement("img");
-logo.src = "./typescript.svg";
-logo.style = "width: 100px; height: 100px";
+  application.use(render_router);
 
-const app = document.createElement("div");
-app.classList.add("app");
-app.appendChild(logo);
-app.appendChild(counter.render());
+  console.log(process.env.DB);
+}
 
-app.style = `
-  width:100vw;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:20px;
-`;
-document.body.appendChild(app);
+bootstrap();

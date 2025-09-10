@@ -1,4 +1,12 @@
 {
   "extends": "@repo/typescript-config/vite.json",
-  "include": ["src"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "types/**/*.d.ts"
+  ],
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "dist"
+  }
 }
