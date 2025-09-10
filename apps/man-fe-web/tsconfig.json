@@ -8,6 +8,6 @@
       "@man/fe-web/*": ["./*"]
     }
   },
-  "include": ["."],
+  "include": [".","./src/types/*.d.ts"],
   "exclude": ["node_modules"]
 }
