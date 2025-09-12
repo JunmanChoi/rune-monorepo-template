@@ -1,5 +1,5 @@
 import { entries, map, pipe, reduce } from "@fxts/core";
-import { html, type Html } from "rune-ts";
+import { type Html, html } from "rune-ts";
 
 const addHtml = (pre: string | Html, val: string | Html) => html`${pre}${val}`;
 

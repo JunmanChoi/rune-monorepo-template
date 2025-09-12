@@ -44,7 +44,8 @@
       "!**/build",
       "!**/.{biome,git,vscode}/*",
       "!**/*.config.{js,ts}",
-      "!**/*.json"
+      "!**/*.json",
+      "!**/.rune"
     ]
   }
 }

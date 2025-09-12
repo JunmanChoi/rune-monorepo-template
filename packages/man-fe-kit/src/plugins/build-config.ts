@@ -26,11 +26,11 @@ export const setClientConfig =
     config.resolve = {
       ...config.resolve,
       fallback: {
-        ["crypto"]: false,
-        ["node:crypto"]: false,
-        ["fs"]: false,
-        ["path"]: false,
-        ["os"]: false,
+        crypto: false,
+        "node:crypto": false,
+        fs: false,
+        path: false,
+        os: false,
       },
       alias: {
         ...option.alias,
