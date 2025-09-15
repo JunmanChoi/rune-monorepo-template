@@ -7,7 +7,7 @@ module.exports = {
   mode: 'render',
   sourcePaths: ['./src'],
   envFiles: ['.env'],
-  clientEntry: './src/renderApp/app/client/index.ts',
+  clientEntry: './src/app/index.ts',
   serverEntry: './src/main.ts',
   dynamicChunk: true,
   serverDynamicChunk: true,

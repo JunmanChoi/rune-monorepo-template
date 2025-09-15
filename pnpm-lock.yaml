@@ -50,28 +50,6 @@ importers:
         specifier: ^5.1.4
         version: 5.1.4(sass@1.92.1)
 
-  apps/web:
-    dependencies:
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      rune-ts:
-        specifier: ^0.9.4
-        version: 0.9.4
-    devDependencies:
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
-      sass:
-        specifier: ^1.92.1
-        version: 1.92.1
-      typescript:
-        specifier: 5.5.4
-        version: 5.5.4
-      vite:
-        specifier: ^5.1.4
-        version: 5.1.4(sass@1.92.1)
-
   packages/typescript-config: {}
 
   packages/ui:

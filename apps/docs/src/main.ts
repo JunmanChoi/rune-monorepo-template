@@ -1,12 +1,10 @@
 import { app } from "@rune-ts/server";
-import { render_router } from "./renderApp/app/server";
+import { router } from "./app/server";
 
 export function bootstrap() {
   const application = app();
 
-  application.use(render_router);
-
-  console.log(process.env.DB);
+  application.use(router);
 }
 
 bootstrap();
