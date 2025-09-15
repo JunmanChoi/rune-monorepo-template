@@ -20,6 +20,6 @@
     "typescript": "5.5.4"
   },
   "peerDependencies": {
-    "rune-ts": "^0.9.0"
+    "rune-ts": "^0.9.4"
   }
 }
