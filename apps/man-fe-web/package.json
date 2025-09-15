@@ -11,7 +11,7 @@
     "compile:check": "tsc --project tsconfig.json --noEmit",
     "compile:dev": "tsc --project tsconfig.json --noEmit --watch",
     "build": "NODE_ENV=production pnpm rune build",
-    "start:local": "NODE_ENV=development RUNTIME_ENV=local pnpm rune dev",
+    "dev": "NODE_ENV=development RUNTIME_ENV=local pnpm rune dev",
     "start:stag": "NODE_ENV=production RUNTIME_ENV=stag pnpm rune start",
     "start:prod": "NODE_ENV=production RUNTIME_ENV=prod pnpm rune start"
   },
