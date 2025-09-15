@@ -16,6 +16,7 @@
     "start:prod": "NODE_ENV=production RUNTIME_ENV=prod pnpm rune start"
   },
   "dependencies": {
+    "@repo/ui": "workspace:*",
     "@fxts/core": "^1.15.0",
     "@man/fe-kit": "workspace:*",
     "@repo/typescript-config": "workspace:*",

@@ -1,0 +1,16 @@
+{
+  "name": "@man/api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "json-server --watch db.json --port 4000",
+    "dev:delay": "json-server --watch db.json --port 4000 --delay 1000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

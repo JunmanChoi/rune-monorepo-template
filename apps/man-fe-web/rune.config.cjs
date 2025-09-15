@@ -30,4 +30,7 @@ module.exports = {
       "@man/fe-web/src": path.resolve(__dirname, "src"),
     },
   }),
+  internalModules:[
+    /@repo\/ui/,
+  ]
 };

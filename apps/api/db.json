@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "홍길동",
+      "email": "hong@test.com",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "김철수",
+      "email": "kim@test.com",
+      "role": "user"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "첫 번째 글",
+      "content": "내용...",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "두 번째 글",
+      "content": "내용...",
+      "userId": 2
+    }
+  ]
+}
