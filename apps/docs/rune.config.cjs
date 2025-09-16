@@ -14,4 +14,7 @@ module.exports = {
   processReload: true,
   showBundleAnalyzer: false,
   publicPath: '/public/',
+  internalModules:[
+    /@repo\/ui/,
+  ]
 };
