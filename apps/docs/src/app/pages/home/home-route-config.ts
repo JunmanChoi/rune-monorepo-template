@@ -1,6 +1,6 @@
 import type { MarppleRouteConfig } from "../../routes/types";
 
-export const homeRouteConfig: MarppleRouteConfig = {
+export const homeRouteConfig: MarppleRouteConfig<"/"> = {
   path: "/",
   fetcher: async (req, res) => {
     // Fetch data for the home page

@@ -22,7 +22,6 @@ export class CommonRenderer implements Renderer<CommonRenderOptions> {
         `렌더하고자 하는 대상이 Page 클래스가 아닙니다. ${view.toString()}`
       );
     }
-    console.log(view);
     const pageView = new MetaView(view, {
       head: {
         title: render_options.title,

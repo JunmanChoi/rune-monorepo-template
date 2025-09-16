@@ -16,5 +16,6 @@ module.exports = {
   publicPath: '/public/',
   internalModules:[
     /@repo\/ui/,
+    /@core\/ssr/
   ]
 };

@@ -7,8 +7,6 @@
   ],
   "compilerOptions": {
     "declaration": true,
-    "outDir": "dist",
-    "moduleResolution": "node",
-    "esModuleInterop": true
+    "outDir": "dist"
   }
 }
