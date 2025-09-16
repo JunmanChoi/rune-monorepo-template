@@ -1,4 +1,4 @@
-import { Counter } from "@repo/ui/counter";
+import { Counter } from "@repo/ui";
 import { html, on, Page } from "rune-ts";
 
 interface HomePageParams {
@@ -12,7 +12,7 @@ export class HomePage extends Page<HomePageParams> {
     onChange: (value) => {
       console.log("Counter value changed:", value);
     },
-  })
+  });
   template() {
     return html /*html*/`
     <div style="padding: 20px; ${this.data.theme === "dark" ? "background-color: #333; color: white;" : ""}">
