@@ -31,8 +31,4 @@
   // 다른 포맷터 비활성화 (충돌 방지)
   "eslint.format.enable": false,
   "prettier.enable": false,
-
-  "typescript.preferences.includePackageJsonAutoImports": "on",
-  "typescript.suggest.autoImports": true,
-  "typescript.workspaceSymbols.scope": "allOpenProjects",
 }
